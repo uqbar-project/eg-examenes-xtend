@@ -1,7 +1,7 @@
 
 # Ejercicio de Diseño - Exámenes de aspirantes
 
-![image](images/examen.jpg) 
+<img src="images/examen.jpg" style="width: 50%; height: 50%"/> 
 
 ## Dominio
 Acme S.A. arma exámenes para evaluar a los aspirantes a ingresar, particularizados para cada aspirante.
