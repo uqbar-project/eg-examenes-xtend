@@ -6,7 +6,9 @@ import java.util.Set
 
 abstract class ItemExamen {
 	def List<Respuesta> respuestasRespondidas()
-	def Object valor()
+	def Object valor() {
+		throw new UnsupportedOperationException("No está definido el comportamiento valor()")		
+	}
 }
 
 class ItemExamenMultiple extends ItemExamen {
@@ -19,11 +21,6 @@ class ItemExamenMultiple extends ItemExamen {
 	override respuestasRespondidas() {
 		newArrayList(respuestas)
 	}
-
-	override valor() {
-		throw new UnsupportedOperationException("Auto-generated function stub")
-	}
-	
 }
 
 class ItemExamenSecuencia extends ItemExamen {
@@ -32,11 +29,6 @@ class ItemExamenSecuencia extends ItemExamen {
 	override List<Respuesta> respuestasRespondidas() {
 		respuestas
 	}
-	
-	override valor() {
-		throw new UnsupportedOperationException("Auto-generated function stub")
-	}
-	
 }
 
 class ItemExamenSimple extends ItemExamen {
@@ -51,7 +43,6 @@ class ItemExamenSimple extends ItemExamen {
 	}
 
 	override respuestasRespondidas() {
-		throw new UnsupportedOperationException("Auto-generated function stub")
+		throw new UnsupportedOperationException("No está definido el comportamiento respuestasRespondidas()")
 	}
-	
 }
